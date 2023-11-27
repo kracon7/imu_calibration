@@ -49,6 +49,24 @@ Accelerometer "bias Instability" | `acc_w` | <img src="https://latex.codecogs.co
 sudo apt-get install libdw-dev
 ```
 
+* Install ceres-solver
+   ```
+   sudo apt-get install cmake libgoogle-glog-dev libgflags-dev
+   sudo apt-get install libatlas-base-dev
+   sudo apt-get install libeigen3-dev
+   sudo apt-get install libsuitesparse-dev
+   
+   tar zxf ceres-solver-2.2.0.tar.gz
+   # Outside ceres-solver dir
+   mkdir ceres-bin
+   cd ceres-bin
+   cmake ../ceres-solver-2.2.0
+   make -j3
+   make test
+   sudo make install
+   ```
+
+
 * download required [`imu_calibration_utils`](https://github.com/kracon7/imu_calibration_utils.git);
 
 * put the ROS package `imu_calibration` and `imu_calibration_utils` into your workspace, usually named `catkin_ws`;
