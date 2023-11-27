@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(imu_utils)
+project(imu_calibration)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 set(CMAKE_BUILD_TYPE "Release")
@@ -15,7 +15,7 @@ find_package(catkin REQUIRED
     std_msgs
     geometry_msgs
     nav_msgs
-    code_utils
+    imu_calibration_utils
     )
 
 ## System dependencies are found with CMake's conventions

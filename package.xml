@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>imu_utils</name>
+  <name>imu_calibration</name>
   <version>0.1.0</version>
   <description>The imu_utils package</description>
 
